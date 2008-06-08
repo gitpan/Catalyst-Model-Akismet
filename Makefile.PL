@@ -9,6 +9,7 @@ license 'perl';
 build_requires 'Test::More';
 
 requires 'Carp';
+requires 'Class::C3';
 requires 'Catalyst::Runtime' => '5.70';
 requires 'Catalyst::Component::InstancePerContext';
 requires 'Net::Akismet::Protocol';

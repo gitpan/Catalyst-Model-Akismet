@@ -1,4 +1,7 @@
 Revision history for Catalyst::Model::Akismet
 
+0.02   2007-08-07
+        Add missing dependency on C3
+
 0.01    2007-03-07:
 		Initial release. Based on S3 Model

@@ -9,7 +9,7 @@ use Carp qw( croak );
 use Catalyst::Utils ();
 use Net::Akismet::Protocol ();
 use Class::C3();
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 NAME

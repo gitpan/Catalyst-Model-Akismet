@@ -19,5 +19,6 @@ requires:
   Carp: 0
   Catalyst::Component::InstancePerContext: 0
   Catalyst::Runtime: 5.70
+  Class::C3: 0
   Net::Akismet::Protocol: 0
-version: 0.01
+version: 0.02
