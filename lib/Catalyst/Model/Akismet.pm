@@ -1,15 +1,15 @@
 package Catalyst::Model::Akismet;
 
-use strict;
-use warnings;
-
-use base qw/Catalyst::Component::InstancePerContext Catalyst::Model/;
-
 use Carp qw( croak );
 use Catalyst::Utils ();
 use Net::Akismet::Protocol ();
-use Class::C3();
-our $VERSION = '0.02';
+use Class::C3 ();
+use Moose;
+extends 'Catalyst::Model';
+with 'Catalyst::Component::InstancePerContext';
+no Moose;
+
+our $VERSION = '0.03';
 
 
 =head1 NAME

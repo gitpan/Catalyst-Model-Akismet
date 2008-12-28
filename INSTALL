@@ -4,10 +4,3 @@ To install this module, run the following commands...
 	make
 	make test
 	make install
-
-Alternatively, to install with Module::Build...
-
-	perl Build.PL
-	./Build
-	./Build test
-	./Build install

@@ -11,7 +11,8 @@ build_requires 'Test::More';
 requires 'Carp';
 requires 'Class::C3';
 requires 'Catalyst::Runtime' => '5.70';
-requires 'Catalyst::Component::InstancePerContext';
+requires 'Catalyst::Component::InstancePerContext' => '0.001000';
 requires 'Net::Akismet::Protocol';
+requires 'Moose';
 
 WriteAll;
