@@ -1,5 +1,10 @@
 Revision history for Catalyst::Model::Akismet
 
+0.04
+        Fix Pod synopsis (RT#63615)
+
+        Use MRO::Compat rather than Class:C3 for perl 5.10+
+
 0.03
         Apply Catalyst::Component::InstancePerContext as a Moose
         role, rather than inheriting from it, so that this model

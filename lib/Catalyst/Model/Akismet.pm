@@ -3,13 +3,13 @@ package Catalyst::Model::Akismet;
 use Carp qw( croak );
 use Catalyst::Utils ();
 use Net::Akismet::Protocol ();
-use Class::C3 ();
+use MRO::Compat;
 use Moose;
 extends 'Catalyst::Model';
 with 'Catalyst::Component::InstancePerContext';
 no Moose;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 =head1 NAME
@@ -19,7 +19,7 @@ Catalyst::Model::Akismet - Catalyst model for the Akismet anti-spam protocol
 =head1 SYNOPSIS
 
     # Use the helper to add an Akismet model to your application...
-    script/myapp_create.pl create model Akismet Akismet
+    script/myapp_create.pl model Akismet Akismet
 
 
     # lib/MyApp/Model/Akismet.pm
@@ -31,7 +31,7 @@ Catalyst::Model::Akismet - Catalyst model for the Akismet anti-spam protocol
     __PACKAGE__->config(
         url => 'http://yourblog.com',
         key => 'SECRET',
-        host => 'rest.akismet.net'
+        host => 'rest.akismet.com'
       );
 
     1;
